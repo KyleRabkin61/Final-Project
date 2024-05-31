@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'SugarAndSpice';
+  src: url('fonts/Sugar\ &\ Spice\ demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 /* navbar */
 .navbar{
     background-color: #ff9757 ;
@@ -6,6 +12,7 @@
   height:100px;
 }
 /* carousel */
+
 .c-item {
     height: 40vw;
     min-height:500px;
@@ -25,7 +32,56 @@
   box-shadow: #fff 0px 4px 29px 0px;
   transition: 0.5s;
 }
+.display-1 {
+  font-family:'SugarAndSpice';
+}
+.wraper{
+  width: 100%;
+  height: 430px;
+  background: #000;
+  display: flex;
+}
+.div-1{
+  width: calc( 50% - 40px) ;
+  height: 100%;
+  background: #ff9757;
+}
+
+.div-2{
+  width: calc( 50% + 40px );
+  height: 100%;
+  background: #fff;
+  border-left: 80px solid #ff9757;
+  border-bottom: 430px solid transparent;
+  box-sizing: border-box;
+}
+.div-3{
+  width: calc( 50% + 40px) ;
+  height: 100%;
+  background: #fff;
+  border-right: 80px solid #ff9757;
+  border-bottom: 430px solid transparent;
+  box-sizing: border-box;
+}
+
+.div-4{
+  width: calc( 50% - 40px );
+  height: 100%;
+  background: #ff9757;
+}
 /*contact css*/
+ul.b {
+  list-style-type: square;
+  list-style-position: inside;
+
+}
+ul li{
+  color: #ff9757;
+}
+ul li span{
+  color: #000;
+}
+
 .contact {
     position:relative;
     min-height: 100vh;
@@ -40,15 +96,21 @@
     text-align:center;
   }
   .contact .content h2{
-    font-size:75px;
+    font-size:150px;
     font-weight:500;
     color:#000000;
-    font-family: 'Staatliches', cursive;
+    font-family:'SugarAndSpice';
   }
   .contact .content p{
     font-weight:500;
     color:#000000;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+  }
+  .contact .content ul{
+    font-weight:500;
+    color:#000000;
+    font-family: "Urbanist", sans-serif;
     font-size: 20px;
   }
   .contact-container{
@@ -72,31 +134,33 @@
     display:flex;
   }
   .contact-container .contactinfo .box .text {
+    font-family: "Urbanist", sans-serif;
     display: flex;
     margin-left:20px;
-    font-size:16px;
-    color:white;
+    font-size:20px;
+    color:rgb(255, 255, 255);
     flex-direction:column;
     font-weight:300;
+  
   }
   .contact-container .contactinfo .box .text h3{
     font-weight:500;
-    color:white;
-    font-family: 'Staatliches', cursive;
+    color:rgb(126, 62, 13);
+    font-family:'SugarAndSpice';
+    font-size: 75px;
   }
-  .contact-container .contactinfo .box .text p{
-    font-family: 'Noto Sans', sans-serif;
-  }
+ 
   .contact-form {
     width:40%;
     padding:40px;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
   }
+
   .contact-form h2{
     font-size:30px;
-    color:black;
-    font-weight:500;
-    font-family: 'Staatliches', cursive;
+    color:#a05720;
+    font-weight:700;
+    font-family: "Urbanist", sans-serif;
   }
   .contact-form .input-box{
     position:relative;
@@ -123,13 +187,13 @@
     pointer-events:none;
     transition:0.5s;
     color:#666;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Urbanist", sans-serif;
   }
   .contact-form .input-box input:focus ~ span,
   .contact-form .input-box input:valid ~ span,
   .contact-form .input-box textarea:focus ~ span,
   .contact-form .input-box textarea:valid ~ span{
-    color:#a05720;
+    color:#ff9757;
     font-size:12px;
     transform:translateY(-20px);
   }
@@ -142,7 +206,7 @@
     padding:10px;
     font-size:18px;
     transition:0.5s;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: "Urbanist", sans-serif;
   }
   .contact-form .input-box input[type="submit"]:hover {
     background-color:white;
