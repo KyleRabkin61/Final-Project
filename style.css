@@ -7,9 +7,22 @@
 /* navbar */
 .navbar{
     background-color: #ff9757 ;
+    font-family: "Urbanist", sans-serif;
 }
 .nav-img {
   height:100px;
+}
+.dropdown-item{
+  color: black;
+}
+.dropdown-item:hover{
+  color:#ff9757;
+  font-weight: 700;
+  background-color: rgb(246, 242, 237);
+}
+.dropdown-item:active{
+color: black;
+font-weight: 900;
 }
 /* carousel */
 
@@ -26,6 +39,7 @@
 .btn {
   background: #a05720;
   color: #fff;
+  font-family: 'Urbanist';
 }
 .btn:hover {
   background: #a05720;
@@ -34,6 +48,8 @@
 }
 .display-1 {
   font-family:'SugarAndSpice';
+  font-size: 10vw;
+  font-weight: 100;
 }
 .wraper{
   width: 100%;
