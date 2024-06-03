@@ -19,6 +19,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<!-- logos for fonts -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
@@ -28,9 +33,12 @@
       <div class="container-fluid">
         <a class="navbar-brand text-white" href="index.html">
           <img src="imgs/Alternate Logo 2.png" alt="Logo" class="d-inline-block nav-img"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -112,8 +120,32 @@
 <div class="div-3" id="visit"></div>
 <div class="div-4"></div>
 </div>
-  <footer>
-  </footer>
+<hr class="line border-5 opacity-100"></hr>
+ <!--  footer start -->
+ <footer class=" text-white text-cente py-2">
+  <p>&copy; <u> <span class="footerwords">Little Bird Toy Company</span> </u> </p>
+
+  <ul class="wrap m-3">
+    <li class="icon facebook">
+      <span class="tooltip">@LittleBirdToyCo</span>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+      <span class="tooltip"> @LittleBirdToys</span>
+      <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+      <span class="tooltip">@LittleBirdToyCo</span>
+      <span><i class="fab fa-instagram"></i></span>
+    </li>
+    <li class="icon snapchat">
+      <span class="tooltip">@LittleBirdToys</span>
+      <span><i class="fab fa-snapchat"></i></span>
+    </li>
+  </ul>
+  
+</footer>
+<!--  footer end -->
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
