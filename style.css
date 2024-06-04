@@ -16,7 +16,7 @@
 }
 
 .dropdown-item {
-  color: rgb(90, 85, 81);
+  color: #503b3b;
 }
 
 .dropdown-item:hover {
@@ -167,6 +167,24 @@
   background: #ff9757;
 }
 
+.content{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 15px;
+}
+.heading {
+  color: #fff;
+  font-family: 'SugarAndSpice';
+  font-size: 125px;
+}
+.descrip {
+  color:#503b3b;
+  font-family: 'Urbanist';
+  font-size: clamp(1rem, 2vw, 2rem);
+  text-align: end;
+  vertical-align: middle;
+}
 /*contact css*/
 ul.b {
   list-style-type: square;
@@ -179,7 +197,7 @@ ul li {
 }
 
 ul li span {
-  color: rgb(90, 85, 81);
+  color: #503b3b;
 }
 
 .contact {
@@ -200,20 +218,20 @@ ul li span {
 .contact .content h2 {
   font-size: 150px;
   font-weight: 500;
-  color: rgb(90, 85, 81);
+  color: #503b3b;
   font-family: 'SugarAndSpice';
 }
 
 .contact .content p {
   font-weight: 500;
-  color: rgb(90, 85, 81);
+  color: #503b3b;
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
 }
 
 .contact .content ul {
   font-weight: 500;
-  color: rgb(90, 85, 81);
+  color: #503b3b;
   font-family: "Urbanist", sans-serif;
   font-size: 20px;
 }
@@ -226,7 +244,7 @@ ul li span {
   align-items: center;
   background-color: #ff9757;
   margin-top: 30px;
-  box-shadow: 10px 20px 36px rgb(90, 85, 81);
+  box-shadow: 10px 20px 36px #503b3b;
 }
 
 .contact-container .contactinfo {
@@ -360,7 +378,7 @@ ul li span {
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(90, 85, 81);
+  color: #503b3b;
 }
 
 footer {
@@ -486,4 +504,30 @@ footer {
 .wrap .snapchat:hover .tooltipp:before {
   background: #ffdf2c;
   transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+/* scrollbar */
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+ 
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background:#503b3b;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #503b3b; 
 }
