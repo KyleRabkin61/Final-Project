@@ -11,6 +11,22 @@
   font-family: "Urbanist", sans-serif;
 }
 
+.nav-link{
+  color: #ffffff;
+  transition: 0.5s;
+}
+.nav-link:hover{
+  color: #503b3b;
+  font-weight: 900;
+  transition: 0.5s;
+}
+.activee{
+  color: #503b3b;
+  font-weight: 900;
+}
+
+
+
 .nav-img {
   height: 100px;
 }
@@ -137,53 +153,24 @@
   display: flex;
 }
 
-.div-1 {
-  width: calc(50% - 40px);
-  height: 100%;
+.row {
+  box-shadow: #503b3b 0px 4px 29px 0px;
+}
+
+.orange {
+  height:300px;
   background: #ff9757;
 }
 
-.div-2 {
-  width: calc(50% + 40px);
-  height: 100%;
-  background: #fff;
-  border-left: 80px solid #ff9757;
-  border-bottom: 430px solid transparent;
-  box-sizing: border-box;
+.white {
+  height:300px;
+  background: white;
 }
 
-.div-3 {
-  width: calc(50% + 40px);
-  height: 100%;
-  background: #fff;
-  border-right: 80px solid #ff9757;
-  border-bottom: 430px solid transparent;
-  box-sizing: border-box;
-}
-
-.div-4 {
-  width: calc(50% - 40px);
-  height: 100%;
-  background: #ff9757;
-}
-
-.content{
-  justify-content: center;
-  display: flex;
-  text-align: center;
-  padding: 15px;
-}
-.heading {
-  color: #fff;
+.title-heading {
   font-family: 'SugarAndSpice';
-  font-size: 125px;
-}
-.descrip {
-  color:#503b3b;
-  font-family: 'Urbanist';
-  font-size: clamp(1rem, 2vw, 2rem);
-  text-align: end;
-  vertical-align: middle;
+  color:white;
+  font-size: 90px;
 }
 /*contact css*/
 ul.b {
@@ -370,15 +357,6 @@ ul li span {
 
 .birdie {
   width: 200px;
-}
-
-.line {
-  width: 25em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #503b3b;
 }
 
 footer {
