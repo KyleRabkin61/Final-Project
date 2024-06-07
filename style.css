@@ -170,7 +170,16 @@
 .title-heading {
   font-family: 'SugarAndSpice';
   color:white;
-  font-size: 90px;
+  font-size: clamp(4rem, 7vw, 400px);
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-color: #503b3b;
+  text-decoration-thickness:3px;
+}
+.description {
+  color: #503b3b;
+  font-family: "Urbanist", sans-serif;
+  font-size: clamp(1rem, 1.2vw, 400px);
 }
 /*contact css*/
 ul.b {
@@ -370,6 +379,9 @@ footer {
 .footerwords {
   font-family: 'SugarAndSpice';
   font-size: 50px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness:3px;
 }
 
 
