@@ -108,7 +108,7 @@
     <!-- carousel end -->
     <div class="container">
       <!-- info starts here -->
-      <div class="row my-5 mx-2" id="story">
+      <div class="row my-5 mx-2 roww" id="story">
         <div class="col-12 col-md-6 orange d-flex justify-content-center align-items-center">
           <h1 class="title-heading">Our Story</h1>
         </div>
@@ -116,7 +116,7 @@
           <p class="description p-3">Little Bird Toys, established in 2018, brings families handcrafted wooden toys designed to spark imagination and slow down playtime. Our heirloom-quality collection is built from sustainable materials and made to last a lifetime, fostering connections between generations.</p>
         </div>
       </div>
-      <div class="row my-5 mx-2" id="quality">
+      <div class="row my-5 mx-2 roww" id="quality">
         <div class="col-12 col-md-6 orange d-flex justify-content-center align-items-center">
           <h1 class="title-heading">Quality</h1>
         </div>
@@ -124,7 +124,7 @@
           <p class="description p-3">We believe in the power of simple, safe play. Our handcrafted toys are free from plastic and batteries, and made with sustainable Baltic birch wood. Each piece is meticulously crafted and rigorously tested in our Toms River, NJ workshop to meet the highest safety standards (ASTM & CA-Prop 65) and ensure unmatched durability.</p>
         </div>
       </div>
-      <div class="row my-5 mx-2" id="sustain">
+      <div class="row my-5 mx-2 roww" id="sustain">
         <div class="col-12 col-md-6 orange d-flex justify-content-center align-items-center">
           <h1 class="title-heading">Sustainability</h1>
         </div>
@@ -132,7 +132,7 @@
           <p class="description p-3">At Little Bird Toys, we are committed to eco-friendly practices. Our wooden toys are designed for longevity, and our manufacturing process minimizes waste and supports the US economy.</p>
         </div>
       </div>
-      <div class="row my-5 mx-2" id="visit">
+      <div class="row my-5 mx-2 roww" id="visit">
         <div class="col-12 col-md-6 orange d-flex justify-content-center align-items-center">
           <h1 class="title-heading">Visit Us</h1>
         </div>
@@ -183,3 +183,15 @@
 </body>
 
 </html>
+
+
+<div class = "card h-100">
+  <div class = "card-header text-center"> ${product.name}</div>
+  <div class = "card-body">
+      <div class = "text-center">
+      <img class = "img-fluid" src="${product.img}
+      <p><strong>Ages:</strong> ${product.age}</p>
+      <p>${product.description}</p>
+      </div>
+  </div>
+</div>
