@@ -37,47 +37,49 @@ const products = [
 ]
 
 function generateProductCards() {
-  const productCardsContainer = document.getElementById('productCards')
+  const productCardsContainer = document.getElementById('productCards');
 
   products.forEach((product, index) => {
-    const card = document.createElement('div')
-    card.classList.add('col-12','col-md-5', 'col-xl-4', 'p-2', 'm-1', 'product-card')
+    const card = document.createElement('div');
+    card.classList.add('col-12', 'col-md-5', 'col-xl-4', 'p-2', 'm-1', 'product-card');
 
     card.innerHTML = `
-  <div class="card p-c h-100">
-    <div class="card-header text-center"> ${product.name}</div>
-    <div class="card-body">
-      <div class="text-center">
-      <img class="img-fluid product-image" src="${product.img}">
-      <p><strong>Age:</strong> ${product.age}</p>
-      <p>${product.sentence}</p>
-      <!-- Button trigger modal -->
-      <button type="button" class="product-btn" data-bs-toggle="modal" data-bs-target="#exampleModal${index}">Learn More</button>
-      </div>
-    </div>
-  </div>
-  <!-- Modal -->
-    <div class="modal fade" id="exampleModal${index}" tabindex="10" aria-labelledby="exampleModalLabel${index}" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header text-center">
-            <h1 class="modal-title fs-5" id="exampleModalLabel${index}">${product.name}</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>${product.description}</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn">Save changes</button>
+      <div class="card p-c h-100">
+        <div class="card-header text-center">${product.name}</div>
+        <div class="card-body">
+          <div class="text-center">
+            <img class="img-fluid product-image" src="${product.img}">
+            <p><strong>Age:</strong> ${product.age}</p>
+            <p>${product.sentence}</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="product-btn" data-bs-toggle="modal" data-bs-target="#exampleModal${index}">Learn More</button>
           </div>
         </div>
       </div>
-    </div>
-`
-    productCardsContainer.appendChild(card)
-  })
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal${index}" tabindex="10" aria-labelledby="exampleModalLabel${index}" aria-hidden="true" data-bs-backdrop="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h1 class="modal-title fs-5" id="exampleModalLabel${index}">${product.name}</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>${product.description}</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    productCardsContainer.appendChild(card);
+  });
 }
+
 
 window.onload = generateProductCards
 
