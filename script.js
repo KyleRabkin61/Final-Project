@@ -36,14 +36,14 @@ function generateProductCards() {
 
     products.forEach(product => {
         const card = document.createElement('div')
-        card.classList.add('col-xl-3','col-md-5','col-12','p-2','m-1')
+        card.classList.add('col-xl-3','col-md-5','col-12','p-2','m-1','product-card')
 
     card.innerHTML = `
             <div class = "card h-100">
                 <div class = "card-header text-center"> ${product.name}</div>
                 <div class = "card-body">
                     <div class = "text-center">
-                    <img class = "img-fluid" src="${product.img}"
+                    <img class = "img-fluid product-image" src="${product.img}"
                     <p><strong>Ages:</strong> ${product.age}</p>
                     <p>${product.description}</p>
                     </div>

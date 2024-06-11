@@ -536,14 +536,22 @@ footer {
     perspective: 1000px;
 }
 
-.card {
+.product-card {
     width: 18rem;
-    height: 22rem;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     position: relative;
+    border: none;
 }
 
+.card-header {
+  background-color: #ff9757;
+  color: white;
+}
+
+.product-image {
+  border: 5px solid #ff9757;
+}
 .card-inner {
     position: relative;
     width: 100%;
