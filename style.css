@@ -629,3 +629,22 @@ button.flip-button {
   transition: 0.3s;
 
 }
+.modal-title{
+  font-family: 'SugarAndSpice';
+  font-size: 35px;
+}
+.learnmoree{
+  font-family: "Urbanist", sans-serif;
+ font-size: 30px;
+}
+.modal-body{
+  font-family: "Urbanist", sans-serif;
+}
+.modal-c-item {
+  height: 20vw;
+  min-height: 300px;
+}
+.modal-c-img {
+  height: 300px;
+  object-fit: cover;
+}
