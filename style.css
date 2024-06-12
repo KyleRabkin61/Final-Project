@@ -523,7 +523,6 @@ footer {
 
 /*our cards*/
 .product-card {
-  width: 18rem;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   position: relative;
@@ -540,6 +539,7 @@ background-color: #ff9757;
 color: #503b3b;
 font-family: 'SugarAndSpice';
 font-size: 35px;
+height:70px;
 }
 
 .product-image {
@@ -557,8 +557,6 @@ border: 3px solid #ff9757;
   box-shadow: #7c7c7c 0px 4px 29px 0px;
   transition: 0.5s;
 }
-
-
 
 /*flip cards*/
 /* .cards-wrapper {

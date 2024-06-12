@@ -41,7 +41,7 @@ function generateProductCards() {
 
   products.forEach((product, index) => {
     const card = document.createElement('div');
-    card.classList.add('col-12', 'col-md-5', 'col-xl-4', 'p-2', 'm-1', 'product-card');
+    card.classList.add('col-12','col-md-5', 'col-xl-4', 'p-2', 'm-1', 'product-card');
 
     card.innerHTML = `
       <div class="card p-c h-100">
@@ -58,9 +58,9 @@ function generateProductCards() {
       </div>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal${index}" tabindex="10" aria-labelledby="exampleModalLabel${index}" aria-hidden="true" data-bs-backdrop="false">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
-            <div class="modal-header text-center">
+            <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel${index}">${product.name}</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
