@@ -646,5 +646,33 @@ button.flip-button {
 }
 .modal-c-img {
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
+}
+.carousel-control-prev-icon {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 100%;
+  transition: 0.35s;
+  width:50px;
+  height:50px;
+}
+.carousel-control-prev-icon:hover {
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 100%;
+  transition: 0.35s;
+}
+.carousel-control-next-icon {
+  background-color: black;
+  opacity: 0.6;
+  border-radius: 100%;
+  transition: 0.35s;
+  width:50px;
+  height:50px;
+}
+.carousel-control-next-icon:hover {
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 100%;
+  transition: 0.35s;
 }

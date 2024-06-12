@@ -30,6 +30,8 @@ const products = [
     name: 'Wooden Car',
     age: 'All ages',
     img1: 'imgs/car1.jpg',
+    img2: 'imgs/car2.jpg',
+    img3: 'imgs/car3.jpg',
     sentence: 'This heirloom-quality wooden car is a timeless treasure!',
     description: 'Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.'
   },
@@ -37,6 +39,8 @@ const products = [
     name: 'Wooden Block Set',
     age: '3+',
     img1: 'imgs/block2.jpg',
+    img2: 'imgs/block4.jpg',
+    img3: 'imgs/block5.jpg',
     sentence: 'Build creativity and imagination with this high-quality, 72-piece block set!',
     description: 'Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).'
   }
@@ -72,7 +76,8 @@ function generateProductCards() {
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <!-- Carousel -->
+                <div id="carouselExample${index}" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active modal-c-item">
                       <img src="${product.img1}" class="d-block w-100 modal-c-img" alt="...">
@@ -90,11 +95,11 @@ function generateProductCards() {
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample${index}" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample${index}" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                   </button>
