@@ -8,9 +8,7 @@ const products = [
     rating: '4.8/5',
     sentence: 'Soar through imaginative skies with this classic wooden airplane!',
     description: 'Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Measures 3.5"H x 7"L x 7"W.',
-    review1: [
-
-    ]
+    review: ['hahah','haha','hahaha']
   },
   {
     name: 'Wooden Train Set',
