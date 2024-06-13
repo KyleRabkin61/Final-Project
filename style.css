@@ -588,6 +588,10 @@ border: 3px solid #ff9757;
   font-family: 'SugarAndSpice';
   font-size: 35px;
 }
+.modal-header {
+  background-color: #ff9757;
+  color: #503b3b;
+}
 .learnmoree{
   font-family: "Urbanist", sans-serif;
  font-size: 30px;
@@ -601,6 +605,7 @@ border: 3px solid #ff9757;
 }
 .modal-c-img {
   height: 300px;
+  width:500px;
   object-fit: contain;
 }
 .carousel-control-prev-icon {
@@ -651,3 +656,7 @@ border: 3px solid #ff9757;
   text-decoration-skip-ink: none;
 
 }
+.pro-descrip {
+  color: #503b3b;
+}
+
