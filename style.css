@@ -154,6 +154,13 @@
 .roww {
   box-shadow: #503b3b 0px 4px 29px 0px;
 }
+.row:target {
+  box-shadow: 0px 10px 35px 0px #503b3b;
+  border-color: #503b3b;
+  animation: ease-in-out;
+  opacity: 4;
+
+} 
 
 .orange {
   height:300px;
