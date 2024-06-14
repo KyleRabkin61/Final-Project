@@ -6,6 +6,7 @@ const products = [
     img2: 'imgs/plane2.jpg',
     img3: 'imgs/plane3.jpg',
     rating: '4.8/5',
+    cost: '$19.99',
     sentence: 'Soar through imaginative skies with this classic wooden airplane!',
     description: 'Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. Measures 3.5"H x 7"L x 7"W.',
     review: ["Wow, this wooden airplane totally blew me away - it's like a blast from the past with a modern twist, and it looks awesome on my shelf!", "This wooden airplane is epic, it's like I'm flying through the clouds with my imagination on full throttle!", "Seriously, this wooden airplane? It's like having a piece of history right in your hands, and it's so darn cool to see it up close!"]
@@ -17,6 +18,7 @@ const products = [
     img2: 'imgs/train2.jpg',
     img3: 'imgs/train3.jpg',
     rating: '4.6/5',
+    cost: '$24.99',
     sentence: 'Embark on a charming journey with this beautiful handcrafted wooden train set!',
     description: 'Engine and three interchangeable cars boast intricate details made from real beech wood. Large size (84cm L x 11cm H x 13cm W) with moving wheels and a fully ecological design.',
     review: ["Zooming through twists and turns, this wooden train set is the coolest thing ever - it's like having my own little world of adventures right in my room!", "This wooden train set? It's like a magical journey waiting to happen every time I push those cars around the track - best toy ever!", "My little conductor's face lights up every time he plays with this wooden train set - it's like watching his imagination come to life on those tracks!"]
@@ -28,6 +30,7 @@ const products = [
     img2: 'imgs/boat2.jpg',
     img3: 'imgs/boat3.jpg',
     rating: '5/5',
+    cost: '$19.99',
     sentence: 'Set sail for bathtub adventures with this adorable wooden boat!',
     description: 'Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety. Includes two peg "lobster people." Size: 10.5"W x 3.5"H.',
     review: ["This wooden boat rocks my world - it's like sailing the seven seas of fun right in my bathtub!", "This wooden boat is the best thing ever - watching your excitement as you captain it across our little sea makes every splash a treasure!", "This wooden boat is a hit with my little captain - it's like seeing the joy of adventure sparkle in your eyes with every wave it conquers!"]
@@ -39,6 +42,7 @@ const products = [
     img2: 'imgs/car2.jpg',
     img3: 'imgs/car3.jpg',
     rating: '4.8/5',
+    cost: '$15.99',
     sentence: 'This heirloom-quality wooden car is a timeless treasure!',
     description: 'Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.',
     review: ["This wooden car is totally rad - it's like zooming down imagination lane with the wind in my hair!", "This wooden car is so cool and fun to play with, I can't stop zooming it around the house!", "This wooden car is beautifully crafted and durable, providing hours of imaginative play for my child!"]
@@ -50,6 +54,7 @@ const products = [
     img2: 'imgs/block4.jpg',
     img3: 'imgs/block2.jpg',
     rating: '5/5',
+    cost: '$29.99',
     sentence: 'Build creativity and imagination with this high-quality, 72-piece block set!',
     description: 'Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate (13” L x 12” W x 2” H).',
     review: ["These wooden blocks are awesome—I can build towers, castles, and anything I can imagine!", "I love these wooden blocks because I can build so many cool things and knock them down!", "This wooden block set is fantastic for sparking creativity and developing fine motor skills in my child!"]
@@ -69,7 +74,7 @@ function generateProductCards() {
           <div class="card-body">
             <div class="text-center">
               <img class="img-fluid product-image" src="${product.img1}">
-              <p>${product.sentence}</p>
+              <p class="p-3">${product.sentence}</p>
               <!-- Button trigger modal -->
               <button type="button" class="product-btn" data-bs-toggle="modal" data-bs-target="#exampleModal${index}">Learn More</button>
             </div>
@@ -114,6 +119,7 @@ function generateProductCards() {
               </div>
                 <p><strong>Age:</strong> ${product.age}</p>
                 <p><strong>Rating:</strong> ${product.rating}</p>
+                <p><strong>Cost:</strong> ${product.cost}</p>
                 <p class = "pro-descrip">${product.description}</p>
               </div>
               <div class = "modal-body">
